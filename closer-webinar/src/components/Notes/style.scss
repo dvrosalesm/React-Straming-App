@@ -1,0 +1,64 @@
+@import "../../styles/variables";
+
+#webinar-notes {
+
+    & {
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    @media screen and (max-width: 992px) {
+        & {
+            margin-left: 0px;
+        }
+    }
+
+    h3 {
+        opacity: 1;
+        color: white;
+        margin-bottom: 20px;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
+    .note-draft {
+        & {
+            background-color: white;
+            height: 500px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        & > div {
+            height: 90%;
+        }
+
+        .rdw-editor-toolbar span {
+            color: black;
+        }
+    }
+
+    button.send-notes {
+        font-size: 12px;
+        background: transparent;
+        display: inline-block;
+        color: white;
+        border-radius: 10px;
+        padding: 5px 10px;
+        vertical-align: top;
+        margin-top: 7px;
+        margin-left: 10px;
+        cursor: pointer;
+        vertical-align: middle;
+        margin-top: -8px;
+
+        img {
+            display: inline-block;
+            width: 50px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    }
+
+}

@@ -1,0 +1,131 @@
+@import "../../styles/variables";
+
+#register-form {
+
+    & > form {
+        background: rgba(21,0,62,0.36);
+        padding: 40px 40px 60px 40px;
+        margin-top: 20px;
+        border-radius: 50px;
+        text-align: left;
+    }
+
+    h2, h3, h4 {
+        text-align: left;
+        color: white;
+        // text-align: center;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
+    @media screen and (max-width: 768px) {
+        
+        h2 {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.5em !important;
+        }
+
+        h4 {
+            font-size: 1.4em !important;
+        }
+
+    }
+
+    h3 {
+        font-size: 2.3em;
+    }
+
+    h4 {
+        font-size: 1.6em;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 500px;
+        margin: 20px 0px;
+        max-width: 100%;
+    }
+
+    .rs-btn-primary {
+        background: $main-color;
+        color: white;
+    }
+
+    p {
+        text-align: center;
+        margin: 20px 0px;
+        font-weight: 800;
+    }
+
+    input::placeholder {
+        color: white;
+    }   
+
+    .rs-form-group {
+        margin-bottom: 10px;
+    }
+
+    input, .rs-picker-select {
+        border-radius: 100px;
+        border: 1px solid white;
+        background: transparent;
+        padding: 15px 15px;
+        color: white;
+    }
+
+    .rs-picker-select {
+        padding: 7px 15px;
+    }
+
+    .rs-picker-select a,
+    .rs-picker-select a span {
+        background-color: transparent !important;
+        border-color: transparent !important;
+        color: white;
+    }
+
+    button {
+        cursor: pointer;
+        padding: 15px 20px;
+        border-radius: 50px;
+        width: 250px;
+        background: linear-gradient(90deg,white, #b4b9d9) !important;
+        color: #001b4b !important;
+        font-family: "Montserrat";
+        font-weight: 400;
+        text-decoration: none;
+        border: none;
+        font-weight: 400 !important;
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+
+    .thanks-register {
+        text-align: center;
+    }
+
+    .rs-list {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    
+    .rs-list-item {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        background: transparent;
+        color: white;
+        text-align: center;
+    }
+
+    .button-thanks {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+}

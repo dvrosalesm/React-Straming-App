@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+
+#webinar-documents {
+
+    & {
+        margin-top: 25px;
+    }
+
+    h3 {
+        opacity: 1;
+        color: white;
+        font-size: 1.5em;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .documents-container {
+        & {
+            min-height: 500px;
+            border-radius: 10px;
+            background-color: rgba(0,0,0,0.1);
+        }
+    }
+
+    .single-document {
+
+        & {
+            background-color:  rgba(21,0,62,0.36);
+            margin-top: 5px;
+            margin-bottom: 10px;
+            padding: 5px;
+            cursor: pointer;
+            color: white;
+            border-radius: 10px;
+        }
+
+        img {
+            position: relative;
+            height: 50px;
+            transition: height 0.3 ease-in-out;
+            display: inline-block;
+            transform: rotate(90deg);
+        }
+
+        span {
+            font-size: 16px;
+            padding-left: 10px;
+        }
+
+        &:hover {
+
+            span {
+                color: rgba(255,255,255,0.8);
+            }
+        }
+
+    }
+
+}

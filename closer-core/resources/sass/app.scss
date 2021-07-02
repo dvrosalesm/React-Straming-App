@@ -1,0 +1,23 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+
+.btn.btn-primary {
+    background: $main-color !important;
+    border: none;
+}
+
+a, .btn.btn-link {
+    color: $main-color;
+}
+
+input:-internal-autofill-selected {
+    background-color: #ff7b004c !important;
+}

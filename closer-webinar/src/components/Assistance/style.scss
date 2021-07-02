@@ -1,0 +1,119 @@
+@import "../../styles/variables";
+
+#assistance-form {
+
+    & > form {
+        background: transparent !important;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    & {
+        text-align: center;
+    }
+
+    h2, h3, h4 {
+        text-align: center;
+        color: white !important;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 4em;
+        font-weight: 700;
+    }
+    
+
+    .rs-btn-primary {
+        background: $main-color;
+        color: white;
+    }
+
+    img {
+        width: 500px;
+        max-width: 100%;
+    }
+
+    p {
+        text-align: center;
+        margin: 20px 0px;
+        font-weight: 700;
+    }
+
+    input {
+        padding: 15px 20px;
+        border-radius: 200px;
+        font-size: 20px;
+        background: rgba(0,0,0,0.36);
+        border-color: transparent;
+        color: white !important;
+        max-width: 700px;
+        font-weight: 400 !important;
+        margin: auto;
+        text-align: center;
+    }
+
+    button {
+        cursor: pointer;
+        padding: 15px 20px;
+        border-radius: 50px;
+        width: 250px;
+        max-width: 100%;
+        background: linear-gradient(90deg,white, #b4b9d9) !important;
+        color: #001b4b !important;
+        font-family: "Montserrat";
+        font-weight: 400;
+        text-decoration: none;
+        border: none;
+        font-weight: 400 !important;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 500px) {
+    
+        h2, h3, h4 {
+            text-align: center;
+            color: white !important;
+            font-weight: bold;
+        }
+    
+        h4 {
+            font-size: 1em;
+        }
+        
+        h3 {
+            font-size: 2em;
+            line-height: 1em;
+        }
+    
+        h2 {
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+    }
+      
+}
+
+.webinar-content {
+    
+    & {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & > div {
+        width: 100%;
+    }
+
+}

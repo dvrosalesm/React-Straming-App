@@ -1,0 +1,483 @@
+#home-container {
+
+    & {
+        overflow-y: hidden;
+    }
+
+    .home-hero {
+
+        & {
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            width: 100%;
+            min-height: 500px;
+            height: 100vh;
+        }
+
+        .rs-flex-box-grid {
+
+            & {
+                position: relative;
+                height: 100%;
+            }
+
+            .home-left {
+
+                & {
+                    position: relative;
+                    height: 100%;
+                }
+
+                .closer-left-img {
+                    width: 100%;
+                }
+
+                .closer-logo-home {
+
+                    & {
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+                        width: 75px;
+                        height: 75px;
+                        background-color: white;
+                        border-radius: 100%;
+                        box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.13);
+                    }
+
+                    img {
+                        width: 100%;
+                        padding: 10px;
+                    }
+
+                }
+
+            }
+
+            .home-right {
+
+                & {
+                    position: relative;
+                    height: 100%;
+                    
+                }
+
+                img {
+                    position: relative;
+                    width: 100%;
+                }
+
+                .headline {
+                    
+                    & {
+                        position: absolute;
+                        width: 500px;
+                        top: 40%;
+                        transform: translateY(-50%);
+                    }
+
+                    h1 {
+
+                        & {
+                            line-height: 50px;
+                            font-weight: 600;
+                        }
+
+                        b {
+                            color: $main-color;
+                            font-weight: 800;
+                        }
+
+                    }
+
+
+                    p {
+                        font-size: 20px;
+                        margin-top: 20px;
+                        width: 350px;
+                    }
+
+                    a {
+                        position: relative;
+                        display: inline-block;
+                        border: 2px solid $main-color;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-top: 20px;
+                        color: white;
+                        background: $main-color;
+
+                        i {
+                            transition: margin 0.3s ease-in-out;
+                        }
+
+                    }
+
+                    a:hover {
+
+                        & {
+                            text-decoration: none;
+                        }
+
+                        i {
+                            margin-left: 15px;
+                        }
+
+                    }
+                    
+
+                }
+
+                .login-wrapper {
+                    
+                    & {
+                        position: absolute;
+                        top: 30px;
+                        right: 50px;
+                    }
+
+                    a {
+                        color: $primary-color;
+                        padding: 10px;
+                        background: white;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        border: 1px solid $primary-color;
+                    }
+
+                    a:hover {
+                        text-decoration: none;
+                    }
+
+                }
+
+            }
+
+        }
+
+        
+
+    }
+
+    .us-hero {
+
+        & {
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            width: 100%;
+            min-height: 500px;
+            height: 100vh;
+            margin-top: 150px;
+        }
+
+        .rs-flex-box-grid {
+
+            & {
+                position: relative;
+                height: 100%;
+            }
+
+            .home-left {
+
+                & {
+                    position: relative;
+                    height: 100%;
+                }
+
+                .closer-left-img {
+                    width: 100%;
+                }
+
+                .closer-logo-home {
+
+                    & {
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+                        width: 75px;
+                        height: 75px;
+                        background-color: white;
+                        border-radius: 100%;
+                        box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.13);
+                    }
+
+                    img {
+                        width: 100%;
+                        padding: 10px;
+                    }
+
+                }
+
+            }
+
+            .home-right {
+
+                & {
+                    position: relative;
+                    height: 100%;
+                }
+
+                img {
+                    position: relative;
+                    width: 100%;
+                }
+
+                .headline {
+                    
+                    & {
+                        position: absolute;
+                        width: 500px;
+                        top: 35%;
+                        right: 30%;
+                        transform: translateY(-50%);
+                    }
+
+                    h1 {
+
+                        & {
+                            line-height: 50px;
+                            font-weight: 600;
+                        }
+
+                        b {
+                            color: $main-color;
+                            font-weight: 800;
+                        }
+
+                    }
+
+                    p {
+                        font-size: 20px;
+                        margin-top: 20px;
+                        width: 500px;
+                    }
+
+                    a {
+                        position: relative;
+                        display: inline-block;
+                        border: 2px solid $main-color;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-top: 20px;
+                        color: white;
+                        background: $main-color;
+
+                        i {
+                            transition: margin 0.3s ease-in-out;
+                        }
+
+                    }
+
+                    a:hover {
+
+                        & {
+                            text-decoration: none;
+                        }
+
+                        i {
+                            margin-left: 15px;
+                        }
+
+                    }
+                    
+
+                }
+
+            }
+
+        }
+        
+    }
+
+    .pricing-hero {
+
+        & {
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            width: 100%;
+            min-height: 500px;
+            height: 100vh;
+            margin-top: 150px;
+        }
+
+        .rs-flex-box-grid {
+
+            & {
+                position: relative;
+                height: 100%;
+            }
+
+            .home-left {
+
+                & {
+                    position: relative;
+                    height: 100%;
+                }
+
+                .closer-left-img {
+                    width: 100%;
+                }
+
+                .closer-logo-home {
+
+                    & {
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+                        width: 75px;
+                        height: 75px;
+                        background-color: white;
+                        border-radius: 100%;
+                        box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.13);
+                    }
+
+                    img {
+                        width: 100%;
+                        padding: 10px;
+                    }
+
+                }
+
+            }
+
+            .home-right {
+
+                & {
+                    position: relative;
+                    height: 100%;
+                }
+
+                img {
+                    position: relative;
+                    width: 100%;
+                }
+
+                .headline {
+                    
+                    & {
+                        position: absolute;
+                        width: 500px;
+                        top: 35%;
+                        right: 30%;
+                        transform: translateY(-50%);
+                        padding: 20px;
+                    }
+
+                    h1 {
+
+                        & {
+                            line-height: 50px;
+                            font-weight: 600;
+                        }
+
+                        b {
+                            color: $main-color;
+                            font-weight: 800;
+                        }
+
+                    }
+
+                    p {
+                        font-size: 20px;
+                        margin-top: 20px;
+                        width: 500px;
+                    }
+
+                    a {
+                        position: relative;
+                        display: inline-block;
+                        border: 2px solid $main-color;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-top: 20px;
+                        color: white;
+                        background: $main-color;
+
+                        i {
+                            transition: margin 0.3s ease-in-out;
+                        }
+
+                    }
+
+                    a:hover {
+
+                        & {
+                            text-decoration: none;
+                        }
+
+                        i {
+                            margin-left: 15px;
+                        }
+
+                    }
+
+                    .func {
+
+                        & {
+                            margin-top: 20px;
+                            width: 550px;
+                            font-size: 20px;
+                        }
+
+                        tr {
+
+                            td:first-child {
+                                width: 10px;
+                                color: $primary-color;
+                            }
+
+                            td:nth-child(2) {
+                                padding: 5px 20px;
+                            }
+
+                        }
+
+                        b {
+                            color: $primary-color;
+                        }
+                        
+                    }
+                    
+
+                }
+
+            }
+
+        }
+        
+    }
+
+    .contact-hero {
+
+        & {
+            position: relative;
+            margin-top: 150px;
+        }
+
+        p {
+            position: relative;
+            font-size: 20px;
+        }
+
+        form {
+
+            & {
+                margin-top: 30px;
+                background-color: white;
+                padding: 20px;
+                border-radius: 5px;
+            }
+
+            button {
+                background-color: $primary-color;
+            }
+
+
+        }
+
+    }
+
+}
