@@ -21,7 +21,7 @@
     .rs-navbar {
 
         & {
-            background: rgba(21,0,62,0.36);
+            background: rgba(10, 2, 26, 0.36);
             position: absolute;
             width: 100%;
         }
@@ -29,11 +29,13 @@
         .logo {
 
             & {
-                padding-left: 10px;
+                padding-left: 40px;
             }
 
             img {
-                height: 100%;
+                position: absolute;
+                height: 50%;
+                top: 20% !important;
             }
 
             @media screen and (max-width: 992px) {
@@ -48,7 +50,7 @@
         .exit-event a {
             
             & {
-                background: transparent;
+                background: rgba(6, 1, 15, 0.36);
                 color: white;
                 font-weight: 700;
             }

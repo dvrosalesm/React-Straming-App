@@ -7,7 +7,7 @@ class StreamingPlayer extends Component {
         return (
             <div id="stream-player">
                 <div className="player">
-                    <iframe title="Stream Player" allowfullscreen="true" src={this.props.streamingUrl}></iframe>
+                    <iframe title="Stream Player" allowFullScreen={true} src={this.props.streamingUrl}></iframe>
                 </div>
             </div>
         );
