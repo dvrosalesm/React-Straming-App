@@ -3,7 +3,7 @@
 #register-form {
 
     & > form {
-        background: rgba(21,0,62,0.36);
+        background: rgba(230, 212, 152, 0.36);
         padding: 40px 40px 60px 40px;
         margin-top: 20px;
         border-radius: 50px;
@@ -12,7 +12,7 @@
 
     h2, h3, h4 {
         text-align: left;
-        color: white;
+        color: rgb(97, 97, 99);
         // text-align: center;
     }
 
@@ -46,15 +46,16 @@
         margin-bottom: 20px;
     }
 
-    img {
-        width: 500px;
+   /* img {
+        width: 250px;
         margin: 20px 0px;
         max-width: 100%;
-    }
+    }*/
 
     .rs-btn-primary {
         background: $main-color;
-        color: white;
+        color: rgb(97, 97, 99);
+        box-shadow: 5px 5px gray !important;
     }
 
     p {
@@ -64,7 +65,7 @@
     }
 
     input::placeholder {
-        color: white;
+        color: black;
     }   
 
     .rs-form-group {
@@ -73,10 +74,10 @@
 
     input, .rs-picker-select {
         border-radius: 100px;
-        border: 1px solid white;
-        background: transparent;
+        border: 1px solid rgb(97, 97, 99);
+        background: white;
         padding: 15px 15px;
-        color: white;
+        color: rgb(97, 97, 99);
     }
 
     .rs-picker-select {
@@ -87,7 +88,7 @@
     .rs-picker-select a span {
         background-color: transparent !important;
         border-color: transparent !important;
-        color: white;
+        color: rgb(97, 97, 99);
     }
 
     button {
@@ -95,7 +96,7 @@
         padding: 15px 20px;
         border-radius: 50px;
         width: 250px;
-        background: linear-gradient(90deg,white, #b4b9d9) !important;
+        background: linear-gradient(90deg,#fff, #E2E0D9) !important;
         color: #001b4b !important;
         font-family: "Montserrat";
         font-weight: 400;
@@ -108,6 +109,7 @@
 
     .thanks-register {
         text-align: center;
+        color: rgb(97, 97, 99);
     }
 
     .rs-list {
@@ -119,7 +121,7 @@
         box-shadow: none;
         -webkit-box-shadow: none;
         background: transparent;
-        color: white;
+        color: rgb(97, 97, 99);
         text-align: center;
     }
 

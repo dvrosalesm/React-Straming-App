@@ -210,7 +210,7 @@ $primary-color: $main-color;
         font-family: "ProximaNova";
         font-weight: 700;
         font-size: 60px;
-        color: white;
+        color: rgb(97, 97, 99);
         margin: 0;
     }
 
@@ -218,7 +218,7 @@ $primary-color: $main-color;
 
         & {
             position: relative;
-            background-color: rgba(0, 72, 176, 0.36);
+            background-color: rgba(230, 212, 152, 0.36);
             width: 630px;
             margin: auto;
             border-radius: 30px;
@@ -232,7 +232,7 @@ $primary-color: $main-color;
 
         p {
             position: relative;
-            color: white !important;
+            color: black !important;
             font-family: "Montserrat" !important;
             line-height: 20px;
             text-align: justify;
@@ -302,7 +302,8 @@ $primary-color: $main-color;
         border-radius: 50px;
         width: 300px;
         max-width: 100%;
-        background: linear-gradient(90deg,white, #b4b9d9) !important;
+        background: linear-gradient(90deg,#fff, #E2E0D9) !important;
+        box-shadow: 5px 5px gray !important;
         color: #001b4b !important;
         font-family: "Montserrat";
         font-weight: 400;

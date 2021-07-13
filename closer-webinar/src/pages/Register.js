@@ -89,9 +89,14 @@ class Webinar extends Component {
                                         <div dangerouslySetInnerHTML={{__html: this.state.event.terms_conditions}}>
 
                                         </div>
-                                        <p className="policies-text">
-                                            <Link target="_blank" to={this.state.event ? "/webinar/" + this.state.event.uuid + "/privacy" : ""}>Aviso de privacidad</Link>
+                                        <p>
+                                           <br></br> 
                                         </p>
+                                        <p className="policies-text">
+                                            <Link target="_blank" style={{color:'black', textDecorationLine: 'underline', textAlign: 'left', whiteSpace:'nowrap'}} to={this.state.event ? "/webinar/" + this.state.event.uuid + "/privacy" : ""}>Aviso de privacidad Guatemala</Link>
+                                            <Link target="_blank" style={{color:'black', textDecorationLine: 'underline', textAlign: 'left', flexShrink: 1 }}to={this.state.event ? "/webinar/" + this.state.event.uuid + "/privacy" : ""}>Aviso de privacidad Honduras</Link>
+                                        </p>
+                                        
                                     </div>
                                 </div>
                                 <button className="btn-primary" id="acceptpolicy" onClick={this.onAcceptPolicies}>Acepto proceder con el Registro</button>

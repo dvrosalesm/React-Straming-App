@@ -4,6 +4,7 @@ import { API } from '../../core/API';
 import DigitalEventLogo from '../../assets/logo-digital.png';
 import {withRouter} from 'react-router-dom';
 import './style.scss';
+import DigitalEventLogo2 from '../../assets/logo-digital2.png';
 var Loader = require('react-loaders').Loader;
 
 class Assistance extends Component {
@@ -31,15 +32,21 @@ class Assistance extends Component {
             submitting: true
         });
         let name = document.getElementById('registered_name').value;
-        let lastname = document.getElementById('registered_lastname').value;
-        let phone = document.getElementById('registered_phone').value;
+        let lastname = "";
+        let phone = "";
         let company = document.getElementById('registered_company').value;
         let email = document.getElementById('registered_email').value;
-        let profession = document.getElementById('registered_profession').value;
+        let confirmEmail = document.getElementById('registered_confirm_email').value;
+        let profession = "";
     
-        if(name.trim() === "" || email.trim() === "" || lastname.trim() === "" ||
-        phone.trim() === "" || company.trim() === "" || profession.trim() === "" || this.state.country === null) {
+        if(name === "" || email.trim() === ""  || confirmEmail.trim() === ""  || company.trim() === "" ||
+           this.state.country === null) {
             Alert.error("Todos los campos son requeridos.")
+            this.setState({
+                submitting: false
+            });
+        }else if (email !== confirmEmail) {
+            Alert.error("Los correos electrónicos no coinciden.")
             this.setState({
                 submitting: false
             });
@@ -134,36 +141,31 @@ class Assistance extends Component {
         return (
             <div id="register-form">
                 <Form fluid onSubmit={this.submitAssistance}>
-                    <h2>Regístrate</h2>
-                    <h3>Evento lanzamiento</h3>
-                    <img src={this.props.config.logo && this.props.config.logo !== "" ? "https://admin.imcloser.live/storage/" + this.props.config.logo : DigitalEventLogo} alt="Evento Digital" />
-                    <h4>19 noviembre 2020 | 19:00 horas</h4>
+                    <div>
+                        <p style={{float: 'right'}}>   <img src={DigitalEventLogo2} alt="Evento Digital 2" width="100px" max-width="100%"></img></p>
+                        <h2>Regístrate</h2>
+                    </div>
+                    <br></br>
+                    <img src={this.props.config.logo && this.props.config.logo !== "" ? "https://admin.imcloser.live/storage/" + this.props.config.logo : DigitalEventLogo} alt="Evento Digital" width="250px" max-width="100%" />
+                    <br></br>
+                    <br></br>
+                    <h4>22 Julio 2021 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| 7:00 am - 1:00 PM</h4>
                     <FormGroup>
-                        <FormControl name="name" id="registered_name" placeholder="Nombre" />
+                        <FormControl name="name" id="registered_name" placeholder="Nombre Completo" />
                     </FormGroup>
                     <FormGroup>
-                        <FormControl name="name" id="registered_lastname"placeholder="Apellido"  />
+                        <FormControl name="email" type="email" id="registered_email" placeholder="Correo Electrónico" />
                     </FormGroup>
                     <FormGroup>
-                        <FormControl name="email" type="email" id="registered_email" placeholder="Email" />
+                        <FormControl name="email" type="email" id="registered_confirm_email" placeholder="Confirmación Correo Electrónico" />
                     </FormGroup>
                     <FormGroup>
-                        <FormControl name="email" type="text" id="registered_phone" placeholder="Teléfono" />
-                    </FormGroup>
-                    <FormGroup>
-                        <FormControl name="email" type="text" id="registered_company" placeholder="Empresa" />
-                    </FormGroup>
-                    <FormGroup>
-                        <FormControl name="email" type="text" id="registered_profession" placeholder="Especialidad" />
+                        <FormControl name="email" type="text" id="registered_company" placeholder="Farmacia" />
                     </FormGroup>
                     <FormGroup>
                         <SelectPicker data={[
                             {label: "Guatemala", value: "Guatemala"},
-                            {label: "El Salvador", value: "El Salvador"},
                             {label: "Honduras", value: "Honduras"},
-                            {label: "Nicaragua", value: "Nicaragua"},
-                            {label: "Costa Rica", value: "Costa Rica"},
-                            {label: "Panamá", value: "Panamá"},
                         ]} style={{ width: "100%" }} onChange={this.countryChange} placeholder="Pais" />
                     </FormGroup>
                     <FormGroup>
@@ -171,7 +173,7 @@ class Assistance extends Component {
                             <Loader type="line-scale" active /> 
                         :
                             <ButtonToolbar>
-                                <Button appearance="primary" block onClick={this.submitAssistance}>Registro</Button>
+                                <Button appearance="primary" block onClick={this.submitAssistance}>Regístrate</Button>
                             </ButtonToolbar>
                         }
                         
