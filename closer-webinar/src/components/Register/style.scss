@@ -97,7 +97,7 @@
         border-radius: 50px;
         width: 250px;
         background: linear-gradient(90deg,#fff, #E2E0D9) !important;
-        color: #001b4b !important;
+        color: rgb(97, 97, 99) !important;
         font-family: "Montserrat";
         font-weight: 400;
         text-decoration: none;
@@ -105,6 +105,7 @@
         font-weight: 400 !important;
         margin-bottom: 10px;
         max-width: 100%;
+        box-shadow: 5px 5px grey !important;
     }
 
     .thanks-register {
@@ -143,7 +144,7 @@
     width: 100%;
     max-width: 250px;
     background: white;
-    color: #001b4b;
+    color: rgb(97, 97, 99);
     font-family: "ProximaNova";
     font-weight: 400;
     text-decoration: none;
@@ -183,7 +184,7 @@
     }
 
     li:hover {
-        background: rgba(255,255,255,0.8);
+        background: rgb(97, 97, 99);
     }
 
 }

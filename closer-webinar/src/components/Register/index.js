@@ -20,9 +20,16 @@ class Assistance extends Component {
             calendar: {
                 title: 'ABBOTT | CUMBRE NUTRICIONAL',
                 description: "",
-                startTime: '2021-07-22T07:00:00-06:00',
-                endTime: '2021-07-22T13:00:00-06:00'
+                startTime: '2021-07-22T07:30:00-06:00',
+                endTime: '2021-07-22T09:00:00-06:00'
+            },
+            calendar2: {
+                title: 'ABBOTT | CUMBRE NUTRICIONAL',
+                description: "",
+                startTime: '2021-07-22T15:00:00-06:00',
+                endTime: '2021-07-22T16:30:00-06:00'
             }
+
         }
 
         this.submitAssistance = this.submitAssistance.bind(this);
@@ -131,18 +138,20 @@ class Assistance extends Component {
                             <b> Fecha del evento: </b>{this.props.config.fecha}
                         </List.Item>
                         <List.Item>
-                            <b>Hora del evento:</b> {this.props.config.hora}
+                            <b>Duración del evento: </b>  1.5 horas
                         </List.Item>
                         <List.Item>
-                            <b>Duración del evento:</b> {this.props.config.duracion} hora
+                            
                         </List.Item>
                         <List.Item>
-                            <AddToCalendar event={this.state.calendar} buttonLabel="Agregar al calendario" />
+                            <b>Hora de evento: </b> 7:30 am
+                            <AddToCalendar event={this.state.calendar} buttonLabel="Agregar al calendario horario 1" />
+                        </List.Item>
+                        <List.Item>
+                            <b>Hora de evento: </b> 3:00 pm
+                            <AddToCalendar event={this.state.calendar2} buttonLabel="Agregar al calendario horario 2" />
                         </List.Item>
                     </List>
-                    <ButtonToolbar>
-                        <Button appearance="primary" className="button-thanks" block onClick={this.backToLogin}>Regresar a Login</Button>
-                    </ButtonToolbar>
                 </Form>
                 </div>
             );
@@ -159,7 +168,7 @@ class Assistance extends Component {
                     <img src={this.props.config.logo && this.props.config.logo !== "" ? "https://admin.imcloser.live/storage/" + this.props.config.logo : DigitalEventLogo} alt="Evento Digital" width="250px" max-width="100%" />
                     <br></br>
                     <br></br>
-                    <h4>22 Julio 2021 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| 7:00 am - 1:00 PM</h4>
+                    <h4>22 Julio 2021 &nbsp; &nbsp; &nbsp;| <br></br> 7:30 am - 9:00 pm ó 3:00 pm - 4:30 pm</h4>
                     <FormGroup>
                         <FormControl name="name" id="registered_name" placeholder="Nombre Completo" />
                     </FormGroup>
@@ -176,6 +185,7 @@ class Assistance extends Component {
                         <SelectPicker data={[
                             {label: "Guatemala", value: "Guatemala"},
                             {label: "Honduras", value: "Honduras"},
+                            {label: "Otros", value: "Otros"},
                         ]} style={{ width: "100%" }} onChange={this.countryChange} placeholder="Pais" />
                     </FormGroup>
                     <FormGroup>

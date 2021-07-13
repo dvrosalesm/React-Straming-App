@@ -93,8 +93,8 @@ class Webinar extends Component {
                                            <br></br> 
                                         </p>
                                         <p className="policies-text">
-                                            <Link target="_blank" style={{color:'black', textDecorationLine: 'underline', textAlign: 'left', whiteSpace:'nowrap'}} to={this.state.event ? "/webinar/" + this.state.event.uuid + "/privacy/GT" : ""}>Aviso de privacidad Guatemala</Link>
-                                            <Link target="_blank" style={{color:'black', textDecorationLine: 'underline', textAlign: 'left', flexShrink: 1 }}to={this.state.event ? "/webinar/" + this.state.event.uuid + "/privacy/HN" : ""}>Aviso de privacidad Honduras</Link>
+                                            <Link target="_blank" style={{color:'rgb(97, 97, 99)', textDecorationLine: 'underline', textAlign: 'left', whiteSpace:'nowrap'}} to={this.state.event ? "/webinar/" + this.state.event.uuid + "/privacy/GT" : ""}>Aviso de privacidad Guatemala</Link>
+                                            <Link target="_blank" style={{color:'rgb(97, 97, 99)', textDecorationLine: 'underline', textAlign: 'left', whiteSpace:'nowrap'}}to={this.state.event ? "/webinar/" + this.state.event.uuid + "/privacy/HN" : ""}>Aviso de privacidad Honduras</Link>
                                         </p>
                                         
                                     </div>

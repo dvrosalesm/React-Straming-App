@@ -76,7 +76,7 @@ class Assistance extends Component {
                 <h3 >Bienvenidos a </h3>
                 <p><img src={this.props.eventLogo && this.props.eventLogo !== "" ? 
                     "https://admin.imcloser.live/storage/" + this.props.eventLogo
-                : DigitalEventLogo} alt="Evento Digital" width="400px" max-width="100%"/></p>
+                : DigitalEventLogo} alt="Evento Digital" width="300px" max-width="100%"/></p>
                 <p><img src={DigitalEventLogo2} alt="Evento Digital 2" width="150px" max-width="100%"></img></p>
                 <h2>Ingresa tu correo electrónico</h2>
                 <h4>para unirte al evento</h4>
