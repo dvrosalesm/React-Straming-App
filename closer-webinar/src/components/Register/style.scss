@@ -131,3 +131,59 @@
     }
 
 }
+
+
+.react-add-to-calendar__button {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    padding: 15px 0px;
+    margin: 15px auto 0px auto;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 250px;
+    background: white;
+    color: #001b4b;
+    font-family: "ProximaNova";
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    background: linear-gradient(90deg, #fff, #E2E0D9) !important;
+    box-shadow: 5px 5px grey !important;
+
+
+    & span {
+        text-align: center;
+    }
+}
+
+.react-add-to-calendar__dropdown {
+
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    li {
+        background: white;
+        padding: 10px 20px;
+        border: 1px solid transparent;
+        height: auto;
+        width: 100%;
+        max-width: 250px;
+        border-radius: 50px;
+        margin: 5px auto 0px auto;
+        text-align: center;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    li:hover {
+        background: rgba(255,255,255,0.8);
+    }
+
+}

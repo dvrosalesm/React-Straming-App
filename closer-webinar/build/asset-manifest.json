@@ -1,33 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b7a1d44.chunk.css",
-    "main.js": "/static/js/main.579c59a3.chunk.js",
-    "main.js.map": "/static/js/main.579c59a3.chunk.js.map",
+    "main.css": "/static/css/main.3e3d537b.chunk.css",
+    "main.js": "/static/js/main.d5bce88b.chunk.js",
+    "main.js.map": "/static/js/main.d5bce88b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.71616459.js",
     "runtime-main.js.map": "/static/js/runtime-main.71616459.js.map",
     "static/css/2.002f4057.chunk.css": "/static/css/2.002f4057.chunk.css",
-    "static/js/2.11549aba.chunk.js": "/static/js/2.11549aba.chunk.js",
-    "static/js/2.11549aba.chunk.js.map": "/static/js/2.11549aba.chunk.js.map",
+    "static/js/2.2f0376f3.chunk.js": "/static/js/2.2f0376f3.chunk.js",
+    "static/js/2.2f0376f3.chunk.js.map": "/static/js/2.2f0376f3.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.66f7c945fe37cf4d8c9542baab0c7dfd.js": "/precache-manifest.66f7c945fe37cf4d8c9542baab0c7dfd.js",
+    "precache-manifest.e05e0f88bb7b4f54a09abbc584744417.js": "/precache-manifest.e05e0f88bb7b4f54a09abbc584744417.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.002f4057.chunk.css.map": "/static/css/2.002f4057.chunk.css.map",
-    "static/css/main.0b7a1d44.chunk.css.map": "/static/css/main.0b7a1d44.chunk.css.map",
-    "static/js/2.11549aba.chunk.js.LICENSE.txt": "/static/js/2.11549aba.chunk.js.LICENSE.txt",
+    "static/css/main.3e3d537b.chunk.css.map": "/static/css/main.3e3d537b.chunk.css.map",
+    "static/js/2.2f0376f3.chunk.js.LICENSE.txt": "/static/js/2.2f0376f3.chunk.js.LICENSE.txt",
     "static/media/closer_logo.png": "/static/media/closer_logo.b148e2fd.png",
     "static/media/closerhomeleft.png": "/static/media/closerhomeleft.23c75a7b.png",
     "static/media/closerhomeright.png": "/static/media/closerhomeright.ebdcaa79.png",
     "static/media/icon.png": "/static/media/icon.d5352209.png",
-    "static/media/logo-digital.png": "/static/media/logo-digital.af03de85.png",
-    "static/media/main-background.jpg": "/static/media/main-background.aaadb3a6.jpg",
+    "static/media/logo-digital.png": "/static/media/logo-digital.709f569a.png",
+    "static/media/logo-digital3.png": "/static/media/logo-digital3.53cc7a4e.png",
+    "static/media/main-background.jpg": "/static/media/main-background.e6ce965a.jpg",
     "static/media/send-mail-icon.svg": "/static/media/send-mail-icon.2c3bdb46.svg",
     "static/media/us-right.png": "/static/media/us-right.ace4cb01.png"
   },
   "entrypoints": [
     "static/js/runtime-main.71616459.js",
     "static/css/2.002f4057.chunk.css",
-    "static/js/2.11549aba.chunk.js",
-    "static/css/main.0b7a1d44.chunk.css",
-    "static/js/main.579c59a3.chunk.js"
+    "static/js/2.2f0376f3.chunk.js",
+    "static/css/main.3e3d537b.chunk.css",
+    "static/js/main.d5bce88b.chunk.js"
   ]
 }

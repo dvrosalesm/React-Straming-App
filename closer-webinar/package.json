@@ -13,6 +13,7 @@
     "loaders.css": "^0.1.2",
     "node-sass": "^4.14.1",
     "react": "^16.14.0",
+    "react-add-to-calendar": "^0.1.5",
     "react-awesome-reveal": "^3.7.1",
     "react-chat-elements": "^10.14.0",
     "react-dom": "^16.14.0",

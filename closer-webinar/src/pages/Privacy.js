@@ -43,6 +43,7 @@ class Privacy extends Component {
             event: this.props.match.params.closerId
         },  (res) => {
             res = res[0];
+
             this.setState({
                 event: res,
                 loading: false
@@ -74,6 +75,10 @@ class Privacy extends Component {
 
     render() {
 
+        let pp = (this.props.match.params.country === "GT") ? this.state.event.privacy_policy : this.state.event.privacy_policy2;
+
+
+
         return (
             <WebinarLayout hasLoaded={false} webinarBackground={this.state.event.background}> 
                 <FlexboxGrid justify="center">
@@ -81,7 +86,7 @@ class Privacy extends Component {
                         <div className="register-container policies">
                             <p className="maintext">PRIVACIDAD</p>
                             <div className="policies-container">
-                                <div dangerouslySetInnerHTML={{__html: this.state.event.privacy_policy}}>
+                                <div dangerouslySetInnerHTML={{__html: pp}}>
 
                                 </div>
                             </div>

@@ -12,6 +12,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        background-position: top;
+        background-attachment: fixed;
     }
 
     .with-header {
@@ -274,6 +276,10 @@ $primary-color: $main-color;
                 margin: auto;
                 display: block;
                 color: white;
+                margin-bottom: 5px;
+            }
+
+            a:last-child {
                 margin-bottom: 35px;
             }
 

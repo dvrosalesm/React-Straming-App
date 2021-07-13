@@ -5,6 +5,7 @@ import DigitalEventLogo from '../../assets/logo-digital.png';
 import {withRouter} from 'react-router-dom';
 import './style.scss';
 import DigitalEventLogo2 from '../../assets/logo-digital2.png';
+import AddToCalendar from 'react-add-to-calendar';
 var Loader = require('react-loaders').Loader;
 
 class Assistance extends Component {
@@ -15,7 +16,13 @@ class Assistance extends Component {
         this.state = {
             country: null,
             submitting: false,
-            submitted: false
+            submitted: false,
+            calendar: {
+                title: 'ABBOTT | CUMBRE NUTRICIONAL',
+                description: "",
+                startTime: '2021-07-22T07:00:00-06:00',
+                endTime: '2021-07-22T13:00:00-06:00'
+            }
         }
 
         this.submitAssistance = this.submitAssistance.bind(this);
@@ -128,6 +135,9 @@ class Assistance extends Component {
                         </List.Item>
                         <List.Item>
                             <b>Duración del evento:</b> {this.props.config.duracion} hora
+                        </List.Item>
+                        <List.Item>
+                            <AddToCalendar event={this.state.calendar} buttonLabel="Agregar al calendario" />
                         </List.Item>
                     </List>
                     <ButtonToolbar>

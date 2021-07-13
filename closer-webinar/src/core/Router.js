@@ -12,6 +12,7 @@ function Router() {
                 <Route exact path="/" component={Home}></Route>
                 <Route exact path="/webinar/:closerId" component={Webinar}></Route>
                 <Route exact path="/webinar/:closerId/register" component={Register}></Route>
+                <Route exact path="/webinar/:closerId/privacy/:country" component={Privacy}></Route>
                 <Route exact path="/webinar/:closerId/privacy" component={Privacy}></Route>
             </Switch>
         </BrowserRouter>
