@@ -10,31 +10,18 @@
         text-align: left;
     }
 
-    h2, h3, h4 {
-        text-align: left;
+    h2, h3, h4, h5 {
+        
         color: rgb(97, 97, 99);
         // text-align: center;
     }
 
     h2 {
         font-size: 3.5em;
+        text-align: left;
     }
 
-    @media screen and (max-width: 768px) {
-        
-        h2 {
-            font-size: 2em;
-        }
-
-        h3 {
-            font-size: 1.5em !important;
-        }
-
-        h4 {
-            font-size: 1.4em !important;
-        }
-
-    }
+    
 
     h3 {
         font-size: 2.3em;
@@ -44,7 +31,21 @@
         font-size: 1.6em;
         font-weight: 600;
         margin-bottom: 20px;
+        margin:0;
+        padding:0;
+        text-align: right;
+        //float: right;
     }
+    h5 {
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 20px;
+        margin:0;
+        padding:0;
+        text-align: right;
+        //float: right;
+    }
+   
 
    /* img {
         width: 250px;
@@ -60,8 +61,45 @@
 
     p {
         text-align: center;
-        margin: 20px 0px;
+        margin: 10px 0px;
         font-weight: 800;
+    }
+    @media screen and (max-width: 768px) {
+        
+        h2 {
+            font-size: 2.5em;
+        }
+
+        h3 {
+            font-size: 1.5em !important;
+        }
+
+        h4 {
+            text-align: left;
+            font-size: 1.4em !important;
+        }
+        h5 {
+            text-align: left;
+            font-size: 1.2em !important;
+           overflow: hidden;
+        }
+        p {
+            margin: 15px 0px;
+        }
+        #habbotlogo {
+            width: 60px;
+        }
+        #habbotlogo2 {
+            width: 150px;
+        }
+        & > form {
+            background: rgba(230, 212, 152, 0.36);
+            padding: 10px 10px 10px 10px;
+            margin-top: 40px;
+            border-radius: 50px;
+            text-align: left;
+        }
+
     }
 
     input::placeholder {

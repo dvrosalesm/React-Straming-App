@@ -4,7 +4,7 @@ import { API } from '../../core/API';
 import DigitalEventLogo from '../../assets/logo-digital.png';
 import {withRouter} from 'react-router-dom';
 import './style.scss';
-import DigitalEventLogo2 from '../../assets/logo-digital2.png';
+import DigitalEventLogo4 from '../../assets/logo-digital4.png';
 import AddToCalendar from 'react-add-to-calendar';
 var Loader = require('react-loaders').Loader;
 
@@ -161,14 +161,17 @@ class Assistance extends Component {
             <div id="register-form">
                 <Form fluid onSubmit={this.submitAssistance}>
                     <div>
-                        <p style={{float: 'right'}}>   <img src={DigitalEventLogo2} alt="Evento Digital 2" width="100px" max-width="100%"></img></p>
+                        <p style={{float: 'right'}}>   <img src={DigitalEventLogo4} id="habbotlogo" alt="Evento Digital 2" width="100px" max-width="100%" ></img></p>
                         <h2>Regístrate</h2>
                     </div>
                     <br></br>
-                    <img src={this.props.config.logo && this.props.config.logo !== "" ? "https://admin.imcloser.live/storage/" + this.props.config.logo : DigitalEventLogo} alt="Evento Digital" width="250px" max-width="100%" />
+                    <img src={this.props.config.logo && this.props.config.logo !== "" ? "https://admin.imcloser.live/storage/" + this.props.config.logo : DigitalEventLogo} id="habbotlogo2" alt="Evento Digital" width="250px" max-width="100%" />
                     <br></br>
                     <br></br>
-                    <h4>22 Julio 2021 &nbsp; &nbsp; &nbsp;| <br></br> 7:30 am - 9:00 pm ó 3:00 pm - 4:30 pm</h4>
+                    <h4>22 Julio 2021</h4>
+                    <h5 style={{whiteSpace:'nowrap'}}>Dos horarios disponibles</h5>
+                    <h4> 7:30 am - 9:00 am <br></br> 3:00 pm - 4:30 pm</h4>
+                    <br></br>
                     <FormGroup>
                         <FormControl name="name" id="registered_name" placeholder="Nombre Completo" />
                     </FormGroup>

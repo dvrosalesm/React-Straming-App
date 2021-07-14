@@ -85,8 +85,8 @@ class Webinar extends Component {
                             <div className="register-container policies">
                                 <p className="maintext">REGISTRO</p>
                                 <div className="policies-container">
-                                    <div >
-                                        <div dangerouslySetInnerHTML={{__html: this.state.event.terms_conditions}}>
+                                    <div  >
+                                        <div dangerouslySetInnerHTML={{__html: this.state.event.terms_conditions}} style={{overflowY:'scroll'}}>
 
                                         </div>
                                         <p>

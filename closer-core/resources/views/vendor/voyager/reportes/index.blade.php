@@ -19,7 +19,7 @@
             <div class="col-md-8">
                 <div class="panel panel-bordered"> 
                     <div class="panel-body">
-                        <h3>Registros</h3>
+                        <h4>Registros</h4>
                         <table class="table table-bordered">
                             <thead>
                                 <th> Nombre </th>
