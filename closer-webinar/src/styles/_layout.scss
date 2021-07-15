@@ -73,6 +73,21 @@
         min-height: 100vh;
         padding-top: 50px;
         padding-bottom: 150px;
+        .rs-flex-box-grid-top {
+            align-items: center;
+        }
+
+        .rs-flex-box-grid {
+            display: flex;
+            -ms-flex-flow: row wrap;
+            flex-flow: column;
+        }
+        @media (min-width: 992px){
+            .rs-col-md-8 {
+                width: 67%;
+            }
+        }
+
     }
 
     .closer-footer::before {
