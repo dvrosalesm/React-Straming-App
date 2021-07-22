@@ -21,6 +21,11 @@
             margin-right: 5px;
             border-right: 1px solid white;
         }
+        @media screen and (max-width: 992px) {
+            img {
+                height: 60px;
+            }
+        }
 
     }
 
