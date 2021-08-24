@@ -6,6 +6,8 @@ import {withRouter} from 'react-router-dom';
 import './style.scss';
 import DigitalEventLogo4 from '../../assets/logo-digital4.png';
 import AddToCalendar from 'react-add-to-calendar';
+import DigitalEventLogo2 from '../../assets/logo-digital2.png';
+
 var Loader = require('react-loaders').Loader;
 
 class Assistance extends Component {
@@ -18,10 +20,10 @@ class Assistance extends Component {
             submitting: false,
             submitted: false,
             calendar: {
-                title: 'ABBOTT | CUMBRE NUTRICIONAL',
+                title: 'ARECA | LANZAMIENTO DE NUEVA IMAGEN',
                 description: "",
-                startTime: '2021-07-22T07:30:00-06:00',
-                endTime: '2021-07-22T09:00:00-06:00'
+                startTime: '2021-09-09T10:00:00-06:00',
+                endTime: '2021-09-09T11:00:00-06:00'
             },
             calendar2: {
                 title: 'ABBOTT | CUMBRE NUTRICIONAL',
@@ -136,20 +138,12 @@ class Assistance extends Component {
                         </List.Item>
                         <List.Item>
                             <b> Fecha del evento: </b>{this.props.config.fecha}
+                        </List.Item>                       
+                        <List.Item>
+                            <b>Hora de evento: </b> 10:00 am 
                         </List.Item>
                         <List.Item>
-                            <b>Duración del evento: </b>  1.5 horas
-                        </List.Item>
-                        <List.Item>
-                            
-                        </List.Item>
-                        <List.Item>
-                            <b>Hora de evento: </b> 7:30 am
-                            <AddToCalendar event={this.state.calendar} buttonLabel="Agregar al calendario horario 1" />
-                        </List.Item>
-                        <List.Item>
-                            <b>Hora de evento: </b> 3:00 pm
-                            <AddToCalendar event={this.state.calendar2} buttonLabel="Agregar al calendario horario 2" />
+                        <AddToCalendar id="acceptBtn" event={this.state.calendar} buttonLabel="Agregar al calendario " />
                         </List.Item>
                     </List>
                 </Form>
@@ -161,16 +155,15 @@ class Assistance extends Component {
             <div id="register-form">
                 <Form fluid onSubmit={this.submitAssistance}>
                     <div>
-                        <p style={{float: 'right'}}>   <img src={DigitalEventLogo4} id="habbotlogo" alt="Evento Digital 2" width="100px" max-width="100%" ></img></p>
+                        
                         <h2>Regístrate</h2>
                     </div>
                     <br></br>
-                    <img src={this.props.config.logo && this.props.config.logo !== "" ? "https://admin.imcloser.live/storage/" + this.props.config.logo : DigitalEventLogo} id="habbotlogo2" alt="Evento Digital" width="250px" max-width="100%" />
+                    <h1>EVENTO VIRTUAL</h1>
+                    <img src={DigitalEventLogo2} id="habbotlogo2" alt="Evento Digital" width="200px" max-width="100%" />
                     <br></br>
                     <br></br>
-                    <h4>22 Julio 2021</h4>
-                    <h5 style={{whiteSpace:'nowrap'}}>Dos horarios disponibles</h5>
-                    <h4> 7:30 am - 9:00 am <br></br> 3:00 pm - 4:30 pm</h4>
+                    
                     <br></br>
                     <FormGroup>
                         <FormControl name="name" id="registered_name" placeholder="Nombre Completo" />
@@ -182,13 +175,15 @@ class Assistance extends Component {
                         <FormControl name="email" type="email" id="registered_confirm_email" placeholder="Confirmación Correo Electrónico" />
                     </FormGroup>
                     <FormGroup>
-                        <FormControl name="email" type="text" id="registered_company" placeholder="Farmacia" />
+                        <FormControl name="email" type="text" id="registered_company" placeholder="Empresa" />
                     </FormGroup>
                     <FormGroup>
                         <SelectPicker data={[
                             {label: "Guatemala", value: "Guatemala"},
+                            {label: "El Salvador", value: "El Salvador"},
                             {label: "Honduras", value: "Honduras"},
-                            {label: "Otros", value: "Otros"},
+                            {label: "Nicaragua", value: "Nicaragua"},
+                            {label: "Costa Rica", value: "Costa Rica"},
                         ]} style={{ width: "100%" }} onChange={this.countryChange} placeholder="Pais" />
                     </FormGroup>
                     <FormGroup>

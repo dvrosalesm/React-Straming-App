@@ -5,10 +5,10 @@
     * {
         font-family: 'Montserrat', sans-serif;
     }
-
+    
     & {
         position: relative;
-
+        
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -24,6 +24,7 @@
 
         & {
             background: rgba(10, 2, 26, 0.36);
+            
             position: absolute;
             width: 100%;
         }
@@ -118,6 +119,7 @@
 
     * {
         font-family: 'Poppins', sans-serif;
+        
     }
 
     .rs-navbar {
@@ -229,7 +231,7 @@ $primary-color: $main-color;
         font-family: "ProximaNova";
         font-weight: 700;
         font-size: 60px;
-        color: rgb(97, 97, 99);
+        color: #004084;
         margin: 0;
     }
 
@@ -237,7 +239,7 @@ $primary-color: $main-color;
 
         & {
             position: relative;
-            background-color: rgba(230, 212, 152, 0.36);
+            background-color: #004084;
             width: 630px;
             margin: auto;
             border-radius: 30px;
@@ -247,11 +249,12 @@ $primary-color: $main-color;
 
         & > div {
             padding: 25px 50px;
+            
         }
 
         p {
             position: relative;
-            color: black !important;
+            color: #FFFFFF !important;
             font-family: "Montserrat" !important;
             line-height: 20px;
             text-align: justify;
@@ -264,11 +267,12 @@ $primary-color: $main-color;
         }
 
         p {
-
+                
             li {
                 height: auto;
                 line-height: 25px;
                 list-style: disc;
+                
             }
 
             li:hover {
@@ -296,12 +300,21 @@ $primary-color: $main-color;
 
             a:last-child {
                 margin-bottom: 35px;
+                
             }
 
         }
 
     }
-
+    @media (min-width: 500px){
+        .maintext {
+            font-family: "ProximaNova";
+            font-weight: 700;
+            font-size: 40px;
+            color: #004084;
+            margin: 0;
+        }
+    }
     input#email {
         border-radius: 50px;
         padding: 15px 20px;
@@ -325,9 +338,9 @@ $primary-color: $main-color;
         border-radius: 50px;
         width: 300px;
         max-width: 100%;
-        background: linear-gradient(90deg,#fff, #E2E0D9) !important;
+        background: linear-gradient(90deg,#FFFFFF, #e6e6e6) !important;
         box-shadow: 5px 5px gray !important;
-        color:  rgb(97, 97, 99)!important;
+        color:  #004084 !important;
         font-family: "Montserrat";
         font-weight: 400;
         text-decoration: none;

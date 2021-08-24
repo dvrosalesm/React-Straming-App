@@ -3,19 +3,21 @@
 #register-form {
 
     & > form {
-        background: rgba(230, 212, 152, 0.36);
+        background: #004084;
         padding: 40px 40px 60px 40px;
         margin-top: 20px;
         border-radius: 50px;
         text-align: left;
     }
 
-    h2, h3, h4, h5 {
+    h1, h2, h3, h4, h5 {
         
-        color: rgb(97, 97, 99);
+        color: #FFFFFF;
         // text-align: center;
     }
-
+    h1{
+        font-weight: normal;
+    }
     h2 {
         font-size: 3.5em;
         text-align: left;
@@ -55,8 +57,8 @@
 
     .rs-btn-primary {
         background: $main-color;
-        color: rgb(97, 97, 99);
-        box-shadow: 5px 5px gray !important;
+        color: #004084;
+        box-shadow: 5px 5px #0a1b32 !important;
     }
 
     p {
@@ -93,7 +95,7 @@
             width: 150px;
         }
         & > form {
-            background: rgba(230, 212, 152, 0.36);
+            background: #004084;
             padding: 10px 10px 10px 10px;
             margin-top: 40px;
             border-radius: 50px;
@@ -103,7 +105,7 @@
     }
 
     input::placeholder {
-        color: black;
+        color: #004084;
     }   
 
     .rs-form-group {
@@ -115,7 +117,7 @@
         border: 1px solid rgb(97, 97, 99);
         background: white;
         padding: 15px 15px;
-        color: rgb(97, 97, 99);
+        color: #004084;
     }
 
     .rs-picker-select {
@@ -126,7 +128,7 @@
     .rs-picker-select a span {
         background-color: transparent !important;
         border-color: transparent !important;
-        color: rgb(97, 97, 99);
+        color: #004084;
     }
 
     button {
@@ -135,7 +137,7 @@
         border-radius: 50px;
         width: 250px;
         background: linear-gradient(90deg,#fff, #E2E0D9) !important;
-        color: rgb(97, 97, 99) !important;
+        color: #004084 !important;
         font-family: "Montserrat";
         font-weight: 400;
         text-decoration: none;
@@ -143,12 +145,12 @@
         font-weight: 400 !important;
         margin-bottom: 10px;
         max-width: 100%;
-        box-shadow: 5px 5px grey !important;
+        box-shadow: 5px 5px #004084 !important;
     }
 
     .thanks-register {
         text-align: center;
-        color: rgb(97, 97, 99);
+        color: #004084;
     }
 
     .rs-list {
@@ -160,7 +162,7 @@
         box-shadow: none;
         -webkit-box-shadow: none;
         background: transparent;
-        color: rgb(97, 97, 99);
+        color: #FFFFFF;
         text-align: center;
     }
 
@@ -182,13 +184,13 @@
     width: 100%;
     max-width: 250px;
     background: white;
-    color: rgb(97, 97, 99);
+    color: #004084;
     font-family: "ProximaNova";
     font-weight: 400;
     text-decoration: none;
     text-align: center;
     background: linear-gradient(90deg, #fff, #E2E0D9) !important;
-    box-shadow: 5px 5px grey !important;
+    box-shadow: 5px 5px #0a1b32 !important;
 
 
     & span {

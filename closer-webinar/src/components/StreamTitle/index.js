@@ -12,7 +12,7 @@ class StreamTitle extends Component {
                     
                     <h1> 
                         <img src={CommonUtils.IMAGES.LiveSP} alt="Live" /> 
-                        <img src={DigitalEventLogo} alt="Evento Digital" ></img>
+                        <img src={DigitalEventLogo} alt="Evento Digital"  ></img>
                      </h1>
                    
                 </div>

@@ -74,10 +74,11 @@ class Assistance extends Component {
         return (
             <div id="assistance-form">
                 <h3 >Bienvenidos a </h3>
-                <p><img src={this.props.eventLogo && this.props.eventLogo !== "" ? 
-                    "https://admin.imcloser.live/storage/" + this.props.eventLogo
-                : DigitalEventLogo} alt="Evento Digital" width="300px" max-width="100%"/></p>
-                <p><img src={DigitalEventLogo2} alt="Evento Digital 2" width="150px" max-width="100%"></img></p>
+                <br></br> 
+                <h2 >EVENTO VIRTUAL </h2>
+                <h6 >donde descubrirás </h6>
+                <h4 >lo bueno que trae el cambio</h4>
+                <p><img src={DigitalEventLogo2} alt="Evento Digital 2" id="centerImage" width="500px" max-width="100%"></img></p>
                 <h2>Ingresa tu correo electrónico</h2>
                 <h4>para unirte al evento</h4>
                 <Form fluid onSubmit={this.submitAssistance}>    

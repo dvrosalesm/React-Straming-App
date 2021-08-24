@@ -85,16 +85,18 @@ class Webinar extends Component {
                             <div className="register-container policies">
                                 <p className="maintext">REGISTRO</p>
                                 <div className="policies-container">
-                                    <div  >
-                                        <div dangerouslySetInnerHTML={{__html: this.state.event.terms_conditions}} style={{overflowY:'scroll'}}>
+                                    <div   >
+                                        <div id="terms" dangerouslySetInnerHTML={{__html: this.state.event.terms_conditions}} style={{overflowY:'scroll'}}>
 
                                         </div>
                                         <p>
                                            <br></br> 
                                         </p>
                                         <p className="policies-text">
-                                            <Link target="_blank" style={{color:'rgb(97, 97, 99)', textDecorationLine: 'underline', textAlign: 'left', whiteSpace:'nowrap'}} to={this.state.event ? "/webinar/" + this.state.event.uuid + "/privacy/GT" : ""}>Aviso de privacidad Guatemala</Link>
-                                            <Link target="_blank" style={{color:'rgb(97, 97, 99)', textDecorationLine: 'underline', textAlign: 'left', whiteSpace:'nowrap'}}to={this.state.event ? "/webinar/" + this.state.event.uuid + "/privacy/HN" : ""}>Aviso de privacidad Honduras</Link>
+                                            <Link target="_blank" style={{color:'#ffffff', textDecorationLine: 'underline', textAlign: 'left', 
+                                            whiteSpace:'nowrap'}} to={this.state.event ? "/webinar/" + this.state.event.uuid + "/privacy/GT" : ""}>Aviso de privacidad Guatemala</Link>
+                                            <Link target="_blank" style={{color:'#ffffff', textDecorationLine: 'underline', textAlign: 'left',
+                                             whiteSpace:'nowrap'}}to={this.state.event ? "/webinar/" + this.state.event.uuid + "/privacy/HN" : ""}>Aviso de privacidad Honduras</Link>
                                         </p>
                                         
                                     </div>

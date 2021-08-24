@@ -14,16 +14,21 @@
         }
 
         img {
-            height: 100px;
+            position: relative;
+            left: 255px;
+            height: 50px;
             padding-top: 10px;
             padding-bottom: 10px;
-            padding-right: 20px;
+            padding-right: 10px;
             margin-right: 5px;
-            border-right: 1px solid white;
+            border-right: 5px solid white;
         }
         @media screen and (max-width: 992px) {
             img {
-                height: 60px;
+                height: 40px;
+                position: relative;
+                left: 0px;
+                
             }
         }
 

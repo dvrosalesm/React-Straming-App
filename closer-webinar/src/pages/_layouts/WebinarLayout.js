@@ -31,7 +31,7 @@ class WebinarLayout extends Component {
                         <Navbar>
                             <Navbar.Header>
                                 <Link to="/" className="navbar-brand logo">
-                                    <img src={this.props.companyLogo && this.props.companyLogo !== "" ? "https://admin.imcloser.live/storage/" + this.props.companyLogo : CommonUtils.IMAGES.SPLogo} alt="Closer" />
+                                   
                                 </Link>
                             </Navbar.Header>
                             <Navbar.Body>
