@@ -160,7 +160,7 @@ class Assistance extends Component {
                     </div>
                     <br></br>
                     <h1>EVENTO VIRTUAL</h1>
-                    <img src={DigitalEventLogo2} id="habbotlogo2" alt="Evento Digital" width="200px" max-width="100%" />
+                    <img src={DigitalEventLogo2} id="habbotlogo2" alt="Evento Digital"  max-width="100%" />
                     <br></br>
                     <br></br>
                     

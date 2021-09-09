@@ -77,38 +77,7 @@ class Webinar extends Component {
 
     render() {
 
-        if(!this.state.acceptedTerms) {
-            return (
-                <WebinarLayout hasLoaded={false} webinarBackground={this.state.event.background}> 
-                    <FlexboxGrid justify="center">
-                        <FlexboxGrid.Item componentClass={Col}  colspan={24} md={12} sm={24}>
-                            <div className="register-container policies">
-                                <p className="maintext">REGISTRO</p>
-                                <div className="policies-container">
-                                    <div   >
-                                        <div id="terms" dangerouslySetInnerHTML={{__html: this.state.event.terms_conditions}} style={{overflowY:'scroll'}}>
-
-                                        </div>
-                                        <p>
-                                           <br></br> 
-                                        </p>
-                                        <p className="policies-text">
-                                            <Link target="_blank" style={{color:'#ffffff', textDecorationLine: 'underline', textAlign: 'left', 
-                                            whiteSpace:'nowrap'}} to={this.state.event ? "/webinar/" + this.state.event.uuid + "/privacy/GT" : ""}>Aviso de privacidad Guatemala</Link>
-                                            <Link target="_blank" style={{color:'#ffffff', textDecorationLine: 'underline', textAlign: 'left',
-                                             whiteSpace:'nowrap'}}to={this.state.event ? "/webinar/" + this.state.event.uuid + "/privacy/HN" : ""}>Aviso de privacidad Honduras</Link>
-                                        </p>
-                                        
-                                    </div>
-                                </div>
-                                <button className="btn-primary" id="acceptpolicy" onClick={this.onAcceptPolicies}>Acepto proceder con el Registro</button>
-                                    
-                            </div>
-                        </FlexboxGrid.Item>
-                    </FlexboxGrid>
-                </WebinarLayout>  
-            )
-        }
+        
 
         return (
             <WebinarLayout hasLoaded={false}> 

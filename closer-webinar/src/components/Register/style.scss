@@ -10,6 +10,14 @@
         text-align: left;
     }
 
+    #habbotlogo2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 300px;
+    }
+
     h1, h2, h3, h4, h5 {
         
         color: #FFFFFF;
@@ -92,6 +100,10 @@
             width: 60px;
         }
         #habbotlogo2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
             width: 150px;
         }
         & > form {

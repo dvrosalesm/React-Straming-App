@@ -70,6 +70,18 @@
         input::placeholder {
             color: black;
         }
+        @media screen and (max-width: 414px) {
+            input {
+                font-size: 15px;
+              
+            }
+            & {
+                display: block;
+                left: -20px;
+                width: 110%;
+                
+            }
+        }
 
     }
 
