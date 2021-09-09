@@ -46,7 +46,7 @@ class Webinar extends Component {
         this.onLogout = this.onLogout.bind(this);
 
     }
-
+   
     componentDidMount() {
         API.getEvent( {
             event: this.props.match.params.closerId
@@ -158,9 +158,14 @@ class Webinar extends Component {
                     <FlexboxGrid>
                         { this.state.sizes.streaming !== 0 ?
                             <FlexboxGrid.Item componentClass={Col}  colspan={this.state.sizes.streaming} md={this.state.sizes.streaming} sm={24}>
+                                { this.state.event.streaming_configuration.vimeo_url && this.state.event.streaming_configuration.vimeo_url !== ""  ?
                                 <StreamPlayer 
-                                    streamingUrl={this.state.event.streaming_configuration.player_url}
+                                    streamingUrl={this.state.event.streaming_configuration.vimeo_url}  
                                 />
+                                : <StreamPlayer 
+                                streamingUrl={this.state.event.streaming_configuration.player_url}  
+                                /> 
+                                }
                             </FlexboxGrid.Item>
                         : null
                         }
