@@ -33,8 +33,8 @@ class Webinar extends Component {
       loading: true,
       assistance: false,
       sizes: {
-        streaming: 16,
-        chat: 8,
+        streaming: 24,
+        chat: 24,
         documents: 10,
         notes: 14,
         special_case: false,
@@ -63,7 +63,7 @@ class Webinar extends Component {
           let sizes = this.state.sizes;
           if (configs.enable_chat === 0) {
             sizes.streaming = 24;
-            sizes.chat = 0;
+            sizes.chat = 24;
           }
           if (configs.enable_documents === 0 && configs.enable_notes === 0) {
             sizes.documents = 0;
