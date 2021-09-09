@@ -30,9 +30,7 @@ class WebinarLayout extends Component {
                     <Header className="webinar-menu">
                         <Navbar>
                             <Navbar.Header>
-                                <Link to="/" className="navbar-brand logo">
-                                   
-                                </Link>
+                              
                             </Navbar.Header>
                             <Navbar.Body>
                                 { this.props.hasLoaded ?

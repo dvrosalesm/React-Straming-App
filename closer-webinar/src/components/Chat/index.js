@@ -72,10 +72,18 @@ class Chat extends Component {
 
     render() {
         return (
-            <div id="chat" >
-                <div className="input-message" >
+            <div id="chat">
+                <div className="title">
+                    <span>Comparte tus preguntas</span>
+                </div>
+                <div className="messages-container">
+                    <div className="messages-wrapper" id="messages-wrapper">
+                        <this.renderMessages />
+                    </div>
+                </div>
+                <div className="input-message">
                     <Form fluid={true} onSubmit={this.postMessage}>
-                        <FormControl name="name" id="message-closer" placeholder="Comparte tus preguntas aqui"  />
+                        <FormControl name="name" id="message-closer" placeholder="Escribe tu mensaje..."  />
                     </Form>
                 </div>
             </div>

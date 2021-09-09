@@ -45,7 +45,33 @@ class Notes extends Component {
 
         return (
             <div id="webinar-notes">
-               
+                <h3>Toma tus notas y envíatelas por correo </h3> 
+                {
+                    !this.state.sentEmail ?
+                        <button className="send-notes" onClick={this.sendNotesToEmail}>
+                            <img src={SendMailIcon} alt="Send email" />
+                            Solo envia una vez
+                        </button>
+                    : null
+                }
+                <div className="note-draft">
+                    <Editor
+                        editorState={this.state.editorState}
+                        onEditorStateChange={this.onChange}    
+                        toolbar={{
+                        inline: { inDropdown: true },
+                        list: { inDropdown: true },
+                        textAlign: { inDropdown: true },
+                        link: { inDropdown: true },
+                        history: { inDropdown: true },
+                        fontFamily: { options: ['Poppins']}
+                        }}
+                        localization={{
+                            locale: 'es',
+                        }}
+                        placeholder="Escribe tus apuntes en esta sección..."
+                    />
+                </div>
             </div>
         )
 
