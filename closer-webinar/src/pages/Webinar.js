@@ -138,11 +138,18 @@ class Webinar extends Component {
   }
 
   render() {
-    const streamingUrl =
-      this.state.event.streaming_configuration.vimeo_url &&
-      this.state.event.streaming_configuration.vimeo_url !== ""
-        ? this.state.event.streaming_configuration.vimeo_url
-        : this.state.event.streaming_configuration.player_url;
+    let streamingUrl = this.state.event.streaming_configuration.player_url || "";
+    const vimeoUrl = this.state.event.streaming_configuration.vimeo_url || "";
+
+    const isYoutube = vimeoUrl.includes('youtube');
+    const isVimeo = vimeoUrl.includes('vimeo');
+
+    if(isYoutube) {
+        const id = vimeoUrl.split("v=")[1].substring(0, 11)
+        streamingUrl = "https://www.youtube.com/embed/" + id;
+    } else if (isVimeo) {
+
+    }
 
     if (this.state.loading)
       return (
