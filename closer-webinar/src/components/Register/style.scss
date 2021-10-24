@@ -3,7 +3,7 @@
 #register-form {
 
     & > form {
-        background: #004084;
+        background: #001DE8;
         padding: 40px 40px 60px 40px;
         margin-top: 20px;
         border-radius: 50px;
@@ -11,27 +11,21 @@
     }
 
     #habbotlogo2 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+       float: right;
 
         width: 300px;
     }
+    #habbotlogo2 {
+        float:left;
+         width: 300px;
+     }
 
     h1, h2, h3, h4, h5 {
         
         color: #FFFFFF;
-        // text-align: center;
-    }
-    h1{
-        font-weight: normal;
-    }
-    h2 {
-        font-size: 3.5em;
-        text-align: left;
-    }
-
-    
+        text-align: center;
+       // font-weight: 600;
+    }  
 
     h3 {
         font-size: 2.3em;
@@ -43,7 +37,6 @@
         margin-bottom: 20px;
         margin:0;
         padding:0;
-        text-align: right;
         //float: right;
     }
     h5 {
@@ -62,11 +55,21 @@
         margin: 20px 0px;
         max-width: 100%;
     }*/
-
+    #agenda{
+        display: block;
+            margin-left: auto;
+            margin-right: auto;
+    }
     .rs-btn-primary {
-        background: $main-color;
+        background: white;
         color: #004084;
-        box-shadow: 5px 5px #0a1b32 !important;
+        box-shadow: 5px 5px #24416E !important;
+        margin: 0;
+        position: absolute;
+        //top: 50%;
+        left: 50%;
+        //-ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, 0%);
     }
 
     p {
@@ -148,13 +151,12 @@
         padding: 15px 20px;
         border-radius: 50px;
         width: 250px;
-        background: linear-gradient(90deg,#fff, #E2E0D9) !important;
+        background: white !important;
         color: #004084 !important;
         font-family: "Montserrat";
-        font-weight: 400;
         text-decoration: none;
         border: none;
-        font-weight: 400 !important;
+        font-weight: bold !important;
         margin-bottom: 10px;
         max-width: 100%;
         box-shadow: 5px 5px #004084 !important;
@@ -188,10 +190,10 @@
 
 .react-add-to-calendar__button {
     cursor: pointer;
-    position: relative;
     display: block;
+    margin-left: auto;
+    margin-right: 75px;
     padding: 15px 0px;
-    margin: 15px auto 0px auto;
     border-radius: 50px;
     width: 100%;
     max-width: 250px;
@@ -201,8 +203,8 @@
     font-weight: 400;
     text-decoration: none;
     text-align: center;
-    background: linear-gradient(90deg, #fff, #E2E0D9) !important;
-    box-shadow: 5px 5px #0a1b32 !important;
+    background: white !important;
+    box-shadow: 5px 5px #24416E !important;
 
 
     & span {
@@ -210,7 +212,10 @@
     }
 }
 
+
+
 .react-add-to-calendar__dropdown {
+    
 
     ul {
         list-style: none;
@@ -226,7 +231,7 @@
         width: 100%;
         max-width: 250px;
         border-radius: 50px;
-        margin: 5px auto 0px auto;
+        margin: 5px 75px 0px auto;
         text-align: center;
     }
 

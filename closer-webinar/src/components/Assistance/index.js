@@ -73,11 +73,8 @@ class Assistance extends Component {
     render() {
         return (
             <div id="assistance-form">
-                <h3 >Bienvenidos a </h3>
+                <h3 >BIENVENIDOS AL</h3>
                 <br></br> 
-                <h2 >EVENTO VIRTUAL </h2>
-                <h6 >donde descubrirás </h6>
-                <h4 >lo bueno que trae el cambio</h4>
                 <p><img src={DigitalEventLogo2} alt="Evento Digital 2" id="centerImage" width="500px" max-width="100%"></img></p>
                 <h2>Ingresa tu correo electrónico</h2>
                 <h4>para unirte al evento</h4>
@@ -87,8 +84,8 @@ class Assistance extends Component {
                     </FormGroup>
                     <FormGroup>
                         <ButtonToolbar>
-                            <Button appearance="primary" block onClick={this.submitAssistance}>Ingresar</Button>
-                            <Button appearance="primary" id="register" block onClick={this.register}>Registro</Button>
+                            <Button appearance="primary" id="login" block onClick={this.submitAssistance}>Ingresar</Button>
+                            <Button appearance="primary" id="register" block onClick={this.register}>Regístrese</Button>
                         </ButtonToolbar>
                     </FormGroup>
                 </Form>

@@ -21,9 +21,10 @@
     .rs-navbar {
 
         & {
-            background: rgba(21,0,62,0.36);
+            background: transparent;
             position: absolute;
             width: 100%;
+            top: 17px;
         }
 
         .logo {

@@ -6,7 +6,7 @@ import {withRouter} from 'react-router-dom';
 import './style.scss';
 import DigitalEventLogo4 from '../../assets/logo-digital4.png';
 import AddToCalendar from 'react-add-to-calendar';
-import DigitalEventLogo2 from '../../assets/logo-digital2.png';
+import DigitalEventLogo2 from '../../assets/logo-digital.png';
 
 var Loader = require('react-loaders').Loader;
 
@@ -142,9 +142,7 @@ class Assistance extends Component {
                         <List.Item>
                             <b>Hora de evento: </b> 10:00 am 
                         </List.Item>
-                        <List.Item>
-                        <AddToCalendar id="acceptBtn" event={this.state.calendar} buttonLabel="Agregar al calendario " />
-                        </List.Item>
+                        
                     </List>
                 </Form>
                 </div>
@@ -154,16 +152,22 @@ class Assistance extends Component {
         return (
             <div id="register-form">
                 <Form fluid onSubmit={this.submitAssistance}>
-                    <div>
-                        
-                        <h2>Regístrate</h2>
+                   
+                    <img src={DigitalEventLogo2} id="habbotlogo2" alt="Evento Digital"  max-width="100%" />
+                    <div id="habbotlogo1" >
+                        <h3>OCTUBRE</h3>
+                        <h1>26 - 27 - 28</h1>
+                        <br></br>
+                        <AddToCalendar id="acceptBtn" event={this.state.calendar} buttonLabel="Agregar al calendario " />
                     </div>
                     <br></br>
-                    <h1>EVENTO VIRTUAL</h1>
-                    <img src={DigitalEventLogo2} id="habbotlogo2" alt="Evento Digital"  max-width="100%" />
                     <br></br>
                     <br></br>
-                    
+                    <div>
+                        
+                        <h1>REGISTRESE</h1>
+                    </div>
+                    <h4>EVENTO VIRTUAL</h4>
                     <br></br>
                     <FormGroup>
                         <FormControl name="name" id="registered_name" placeholder="Nombre Completo" />
@@ -175,7 +179,7 @@ class Assistance extends Component {
                         <FormControl name="email" type="email" id="registered_confirm_email" placeholder="Confirmación Correo Electrónico" />
                     </FormGroup>
                     <FormGroup>
-                        <FormControl name="email" type="text" id="registered_company" placeholder="Empresa" />
+                        <FormControl name="email" type="number" id="registered_company" placeholder="Colegiado" />
                     </FormGroup>
                     <FormGroup>
                         <SelectPicker data={[
@@ -191,7 +195,7 @@ class Assistance extends Component {
                             <Loader type="line-scale" active /> 
                         :
                             <ButtonToolbar>
-                                <Button appearance="primary" block onClick={this.submitAssistance}>Regístrate</Button>
+                                <Button appearance="primary" block onClick={this.submitAssistance}>Regístrese</Button>
                             </ButtonToolbar>
                         }
                         

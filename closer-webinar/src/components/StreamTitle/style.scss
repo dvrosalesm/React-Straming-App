@@ -16,12 +16,15 @@
         img {
             position: relative;
             left: 10px;
-            height: 50px;
+            height: 125px;
             padding-top: 10px;
             padding-bottom: 10px;
             padding-right: 10px;
             margin-right: 5px;
             border-right: 5px solid white;
+        }
+        #logoLive{
+            border-right: 5px ; 
         }
         @media screen and (max-width: 992px) {
             img {
