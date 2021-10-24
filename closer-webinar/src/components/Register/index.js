@@ -7,6 +7,7 @@ import './style.scss';
 import DigitalEventLogo4 from '../../assets/logo-digital4.png';
 import AddToCalendar from 'react-add-to-calendar';
 import DigitalEventLogo2 from '../../assets/logo-digital.png';
+import Agenda from '../../assets/X-SIMPOSIUM-AGENDA-HORARIO_C1.png';
 
 var Loader = require('react-loaders').Loader;
 
@@ -158,7 +159,10 @@ class Assistance extends Component {
                         <h3>OCTUBRE</h3>
                         <h1>26 - 27 - 28</h1>
                         <br></br>
-                        <AddToCalendar id="acceptBtn" event={this.state.calendar} buttonLabel="Agregar al calendario " />
+                        <a download="logo-X-SIMPOSIUM-AGENDA-HORARIO_C1.png" href={Agenda} title="ImageName">
+                            <button type="button" id="agendaButton">Descargar Agenda</button>
+                        </a>
+ 
                     </div>
                     <br></br>
                     <br></br>

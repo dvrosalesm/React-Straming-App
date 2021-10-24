@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import CommonUtils from '../../core/CommonUtils';
 import FooterLogo from '../../assets/footerLogo.png';
 import HeaderLogo from '../../assets/headerLogo.png';
+import "./style.css";
 
 class WebinarLayout extends Component {
 
@@ -62,7 +63,7 @@ class WebinarLayout extends Component {
                     </FlexboxGrid>
                 </Content>
                 <Footer justify="center" className="closer-footer">
-                    <img src={FooterLogo}  top="-500px" width="800px" />
+                    <img src={FooterLogo} id="footer" top="-500px" width="700px" />
                 </Footer>
             </Container>
         );
