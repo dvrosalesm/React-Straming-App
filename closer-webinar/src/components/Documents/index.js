@@ -27,16 +27,7 @@ class Documents extends Component {
         });
     }
 
-    render() {
-        return (
-            <div id="webinar-documents">
-                <h3>Material de apoyo</h3>
-                <div className="documents-container">
-                    <this.renderDocuments />
-                </div>
-            </div>
-        );
-    }
+   
 
 }
 

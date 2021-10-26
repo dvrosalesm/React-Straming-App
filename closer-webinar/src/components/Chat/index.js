@@ -76,6 +76,7 @@ class Chat extends Component {
                 <div className="input-message" >
                     <Form fluid={true} onSubmit={this.postMessage}>
                         <FormControl name="name" id="message-closer" placeholder="Comparte tus preguntas aqui"  />
+                        <button type="submit"  onSubmit={this.postMessage}>Enviar</button>
                     </Form>
                 </div>
             </div>

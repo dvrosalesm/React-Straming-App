@@ -13,12 +13,40 @@
         background: transparent;
         
     }
+    button {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 106%;
+        //-ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        cursor: pointer;
+        padding: 15px 20px;
+        border-radius: 50px;
+        width: 10%;
+        background: white !important;
+        color: #004084 !important;
+        font-family: "Montserrat";
+        text-decoration: none;
+        border: none;
+        font-weight: bold !important;
+        margin-bottom: 10px;
+        max-width: 100%;
+        box-shadow: 5px 5px #004084 !important;
+
+    }
 
     @media screen and (max-width: 992px) {
         & {
             margin-left: 0px;
            
 
+        }
+        button{
+            width: 35%;
+            left: 50%;
+            top: 200%;
         }
        
     }
@@ -57,7 +85,7 @@
         
         & {
             position: relative;
-            width: 100%;
+            width: 90%;
             
         }
 
