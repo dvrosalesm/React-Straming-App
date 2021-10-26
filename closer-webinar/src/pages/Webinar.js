@@ -148,7 +148,9 @@ class Webinar extends Component {
         const id = vimeoUrl.split("v=")[1].substring(0, 11)
         streamingUrl = "https://www.youtube.com/embed/" + id;
     } else if (isVimeo) {
-
+        const splittedUrl = vimeoUrl.split("/");  
+        const id = splittedUrl[splittedUrl.length - 1];
+        streamingUrl = "https://player.vimeo.com/video/" + id;
     }
 
     if (this.state.loading)
