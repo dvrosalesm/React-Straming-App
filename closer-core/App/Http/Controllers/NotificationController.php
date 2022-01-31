@@ -97,9 +97,6 @@ class NotificationController extends VoyagerBaseController
 
     private function sendMessage($message, $recipients)
     {
-        $account_sid = "ACc1a7c47ba853cfc59b171723435e3c8c";
-        $auth_token = "438a1e433bd5ee143d75d5bc0c2c24ab";
-        $twilio_number = "+12513513947";
 
         $client = new Client($account_sid, $auth_token);
         $client->messages->create($recipients, array('from' => $twilio_number, 'body' => $message));
